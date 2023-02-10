@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Roboto&display=swap');
+
+body {
+    background-color: #151f32;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif !important;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+
+section {
+    position: relative;
+    background: #151f32 !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.links {
+    align-items: center;
+}
+
+nav {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 40px;
+    /* background-color: rgb(185, 226, 197); */
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.flex li {
+    list-style: none;
+    padding: 0px 23px;
+}
+
+header {
+    padding: 0 0px;
+    margin: auto;
+    /* to make the navbar center of page*/
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 3px #e7e7e7;
+    z-index: 1000000;
+}
+
+.logo {
+    width: 75px;
+    height: 48px;
+}
+
+section {
+    background: #f9f9f9;
+}
+
+.search {
+    width: 19vw;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0px 0px 6px #bdbdbd;
+    height: 6vh;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+}
+
+#hamburger__navbar {
+    display: none;
+    height: 4.5rem;
+    animation: none;
+    position: relative;
+    /* animation: anim1 0.5s forwards; */
+}
+
+.ham__nav__ele {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ham__ele {
+    flex-direction: column;
+    display: none;
+}
+
+#hamburger__navbar__after {
+    animation: anim 0.5s forwards !important;
+    position: relative;
+    background: #0000001a;
+}
+
+@keyframes anim {
+    0% {
+        height: 4.5rem;
+    }
+
+    100% {
+        height: 15rem;
+    }
+}
+
+@keyframes anim1 {
+    0% {
+        height: 15rem;
+    }
+
+    100% {
+        height: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 784px) {
+    .navbar {
+        display: none !important;
+    }
+
+    #hamburger__navbar {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .texts {
+        width: 80% !important;
+    }
+
+    .ham__ele li {
+        list-style: none;
+        padding: 8px 12px !important;
+    }
+}
+
+.front__bg {
+    height: 100vh;
+    /* background: linear-gradient(rgb(0 0 0 / 65%), rgb(0 0 0 / 1%)), url(./1282018.jpg); */
+    background-size: cover;
+}
+
+.search__tab {
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__tab>button {
+    padding: 0rem 0.9rem 0rem 0.9rem;
+    font-size: 0.9rem;
+    display: flex;
+    height: 6vh;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #919191e0;
+    border-radius: 5px;
+    background: #000000e0;
+    color: white;
+}
+
+.login {
+    background: #ffa123e0;
+    color: white;
+}
+
+.signup {
+    background: #ffa123e0;
+    color: white;
+}
+
+.content>h1 {
+    color: white;
+}
+
+.content>p {
+    color: white;
+}
+
+.content>h1 {
+    color: white;
+}
+
+@media only screen and (max-width: 1100px) {
+    .search__tab {
+        width: 39%;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .search__tab {
+        display: none;
+    }
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: brightness(0.5);
+}
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content1 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 90%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content1>div>div>button {
+    padding: 0.8rem;
+    width: 10rem;
+    font-size: 1rem;
+    background: no-repeat;
+    color: white;
+    border: 4px solid white;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.content__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__main>img {
+    width: 24%;
+}
+
+
+.heading span {
+    color: white
+}
+
+.heading {
+    color: #ffa123e0;
+
+}
+
+.content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content .card img {
+    padding: 23px;
+    height: 21rem;
+}
+
+.btn {
+    padding: 0rem 0.9rem 0rem 0.9rem;
+    margin: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    height: 6vh;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #ffa123e0;
+    border-radius: 5px;
+    background: #ffa123e0;
+    color: white;
+    width: 200px;
+}
+
+.content .card {}
+
+.heading {
+    padding: 23px;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.card .text {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+}
+
+.community-tab h3 {
+    color: #ffa123e0;
+    font-size: 4rem;
+}
+
+.community-tab span {
+    font-size: 2rem;
+    width: 90%;
+    text-align: center;
+}
+
+.community-tab div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+.community-tab .buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.community-tab {
+    color: white;
+    height: 300px;
+    background: url(../img/WhatsApp\ Image\ 2023-02-08\ at\ 1.28.33\ PM.jpeg);
+    background-size: cover;
+    min-height: 90vh;
+}
+
+footer {
+    display: flex;
+    height: 10rem;
+    width: 100%;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__main {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    border-top: 1px solid #dddddd;
+    padding: 3rem;
+}
+
+.footer__links {
+    display: flex;
+    width: 66%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer__links>a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.footer__logo>p {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+
+@media only screen and (max-width: 972px) {
+    .footer__main {
+        flex-direction: column-reverse;
+    }
+
+    .footer__links {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .footer__main {
+        width: 97%;
+    }
+
+    .footer__links {
+        width: 100%;
+    }
+}
+
+footer {
+    position: relative;
+    background: #151f32 !important;
+}
